@@ -7,28 +7,29 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./output.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
+
 </head>
-<body>
-
-  Learning
-
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body class="bg-yellow flex flex-col justify-center items-center h-screen">
+    <div class="bg-white p-[16px] rounded-[15px] flex flex-col gap-[20px] font-['Figtree'] border-black border shadow-custom">
+        <div>
+            <img src="./assets/images/illustration-article.svg" alt="illustration-article" class="rounded-[15px]">
+        </div>
+        <div class="flex flex-col gap-[7px]">
+            <p class="font-[800] bg-yellow self-start pr-[15px] pl-[15px] pt-[8px] pb-[8px] rounded-[4px]">Learning</p>
+            <p class="font-[400] text-grey-950">Published 21 Dec 2023</p>
+            <p class="font-[800] text-[24px] cursor-pointer hover:text-yellow">HTML & CSS foundations</p>
+        </div>
+        <div>
+            <p class="w-[336px] font-[400] text-[16px] text-grey-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+        <div class="flex items-center gap-[10px]">
+            <img src="./assets/images/image-avatar.webp" alt="image-avatar" class="shadow-md rounded-[50%] size-[40px]">
+            <p class="font-[800] text-[16px]">Greg Hooper</p>
+        </div>
+    </div>
 </body>
 </html>
